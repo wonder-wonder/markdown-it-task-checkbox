@@ -80,7 +80,7 @@ function makeCheckbox(token, id, options, TokenConstructor) {
 	  checkbox.attrs.push(["checked", "checked"]);
 	}
 	if (options.disabled === true) {
-	  checkbox.attrs.push(["disabled", "true"]);
+	  checkbox.attrs.push(["onclick", "return false;"]);
 	}
 	
 	return checkbox;
